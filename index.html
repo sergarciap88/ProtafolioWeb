@@ -3,42 +3,44 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta />
-  http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portafolio de desarrollo web" />
   <title>Portafolio</title>
   <link rel="stylesheet" href="style.css" />
+
   <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css" />
-  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex/themes/primeone-dark.css" />
-  <script src="https://kit.fontawesome.com/f515cd753c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex/themes/saga-blue.css" />
+  <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   //HEADER
   <header class="flex w-full fixed top-0 z-1">
-    <nav class="flex justify-content-between w full navbar">
-      <span class="logo cursor pointer">
-        <img src=".//assets/Logo2.png" alt="Logo de mi portafolio" />
+    <nav class="flex justify-content-between w-full navbar">
+      <span class="logo cursor-pointer">
+        <img src=".//assets/Logo2.png" alt="Logo de mi portafolio" width="50" height="50" />
       </span>
-      <input type="checkbox" aria-label="Checkbox para mostrar y ocultar menu hamburguesa" class="checkbox xl:hidden" />
-      <div class="hamburger_lines">
+
+      <input type="checkbox" aria-label="Checkbox para mostrar y ocultar menu hamburguesa" class="checkbox xl:hidden">
+      <div class="hamburger__lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <div class="header_info flexe align-items-center gap-3">
-        <ul class="flex flex column xl:flex-row list-none">
+      <div class="header__info flex align-items-center gap-3">
+        <ul class="flex flex-column xl:flex-row list-none">
           <li>Sobre mi</li>
           <li>Servicios</li>
           <li>Portafolio</li>
           <li>Contacto</li>
         </ul>
-        <div class="hireme__button pt-4">
+        <div class="hireMe__button pt-4">
           <a href="mailto:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
             class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
         </div>
       </div>
+
     </nav>
   </header>
 
@@ -48,7 +50,7 @@
       <div class="left__content col-12 xl:col-6">
         <div class="message__bubble triangle mb-4 mb:mb-2">
           <div class="message__text p-2 sm:p-3 text-center">
-            <p>Hola, yo soy</p>
+            <p>Hola,Yo soy</p>
           </div>
         </div>
         <h1 class="text-3xl sm:text-5xl md:text-7xl">Sergio G. Puente</h1>
@@ -69,33 +71,96 @@
         <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100" />
       </div>
     </section>
+
     <!--ABOUT ME-->
     <section id="about" class="about__me w-full min-h-screen flex align-items-center">
       <div class="aboutME__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
         <div class="aboutME__info col-12 md:col-6 md:pr-6 pt-0">
           <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
           <p class="text-gray-500">Soy un desarrollador web full stack apasionado por crear soluciones
-             innovadoras y eficientes. Mi experiencia abarca desde el diseño de interfaces intuitivas
-             hasta el desarrollo backend robusto, siempre enfocado en la calidad del producto final.</p>
-             <div class="knowledge flex flex-column gap-3 mt-5">
-              <p>HTML</p>
-              <div class="progress__bar progress__html"></div>
-              <p>CSS</p>
-              <div class="progress__bar progress__css"></div>
-              <p>JavaScript</p>
-              <div class="progress__bar progress__javascript"></div>
-              <p class=>React</p>
-              <div class="progress__bar progress__react"></div>
-             </div>
+            innovadoras y eficientes. Mi experiencia abarca desde el diseño de interfaces intuitivas
+            hasta el desarrollo backend robusto, siempre enfocado en la calidad del producto final.</p>
+          <div class="knowledge flex flex-column gap-3 mt-5">
+            <p>HTML 90%</p>
+            <div class="progress__bar progress__html">
+              <span></span>
+            </div>
+            <p>CSS 75%</p>
+            <div class="progress__bar progress__css">
+              <span></span>
+            </div>
+            <p>JavaScript 65%</p>
+            <div class="progress__bar progress__javascript">
+              <span></span>
+            </div>
+            <p>React Js 50%</p>
+            <div class="progress__bar progress__reactJs">
+              <span></span>
+            </div>
+          </div>
+          <div class="hireMe__button pt-4">
+            <a href="mailTo:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
+              class="cursor-pointer no-underline border-round-lg">Contratame</a>
+          </div>
+        </div>
+        <div class="image col p-0 mt-6 md:mt-0">
+          <img src="./assets/freelancer.jpg" alt="Foto relacionado acerca de mi" width="100" height="100" />
         </div>
       </div>
     </section>
+
   </div>
 
   <!--FREE LANCER SECTION-->
-  <section id="home"></section>
+  <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+    <p class="text-sm">Tienes un proyecto en mente?</p>
+    <h1 class="text-center">Hablemos de tu idea</h1>
+    <div class="hireMe__button pt-4">
+      <a href="mailto:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
+        class="cursor-pointer no-underline border-round-lg">Escribeme</a>
+    </div>
+  </section>
   <!--SERVICES-->
-  <section id="services"></section>
+  <div class="container"></div>
+  <section id="services" class="services min-h-full w-full pb-7">
+    <div class="services__title flex flex-column gap-3 text-center">
+      <h1 class="text-3xl md:text-5xl">Mis Servicios</h1>
+      <p class="text-gray-400">Ofrezco una amplia gama de servicios para satisfacer tus necesidades digitales</p>
+    </div>
+    <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+      <div class="card flex align-items-center col-12 sm:col-6 lg:col-4">
+        <div class="service__logo flex align-items-center justify-content-center">
+          <i class="fa-brands fab fa-html5"></i>
+        </div>
+        <div class="service__name">
+          <p>HTML</p>
+        </div>
+      </div>
+      <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+        <div class="service__logo flex align-items-center justify-content-center">
+          <i class="fa-brands fa-css"></i>
+        </div>
+        <div class="service__name">
+          <p>CSS</p>
+        </div>
+    </div>
+      <div class="card flex align-items-center col-12 sm:col lg:col gap-3 p-2">
+        <div class="service__logo flex align-items-center justify-content-center">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <div class="service__name">
+          <p>JavaScript</p>
+        </div>
+      </div>
+      <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+        <div class="service__logo flex align-items-center justify-content-center">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="service__name">
+          <p>React Js</p>
+        </div>
+      </div>
+  </section>
   <!--PORTAFOLIO-->
   <section id="portafolio"></section>
   <!--FOOTER-->

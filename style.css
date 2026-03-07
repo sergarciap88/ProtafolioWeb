@@ -271,22 +271,24 @@ body::-webkit-scrollbar-track {
     height: 100%;
     position: absolute;
 }
-.progress__wordpress span {
-    background-color: #ff4900;
-    width: 100%;
-}
+
 .progress__html span {
+    background-color: #ff4900;
+    width: 90%;
+}
+.progress__css span {
     background-color: #ff7004;
     width: 75%;
 }
-.progress__angular span {
+.progress__javascript span {
     background-color: #ff9809;
-    width: 80%;
+    width: 65%;
 }
 .progress__reactJs span {
     background-color: #ff9809;
-    width: 95%;
+    width: 50%;
 }
+
 
 /* ------- FREE LANCER -------- */
 
