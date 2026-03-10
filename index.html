@@ -15,29 +15,30 @@
 </head>
 
 <body>
-  //HEADER
+  <!-- HEADER -->
   <header class="flex w-full fixed top-0 z-1">
-    <nav class="flex justify-content-between w-full navbar">
-      <span class="logo cursor-pointer">
-        <img src=".//assets/Logo2.png" alt="Logo de mi portafolio" width="50" height="50" />
-      </span>
+    <nav class="flex justify-content-between align-items-center w-full navbar">
 
-      <input type="checkbox" aria-label="Checkbox para mostrar y ocultar menu hamburguesa" class="checkbox xl:hidden">
+      <a href="#home" class="logo-text no-underline">
+        SG<span>.dev</span>
+      </a>
+
+      <input type="checkbox" aria-label="Checkbox para menu" class="checkbox xl:hidden">
       <div class="hamburger__lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
+
       <div class="header__info flex align-items-center gap-3">
         <ul class="flex flex-column xl:flex-row list-none">
-          <li>Sobre mi</li>
-          <li>Servicios</li>
-          <li>Portafolio</li>
-          <li>Contacto</li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
-        <div class="hireMe__button pt-4">
-          <a href="mailto:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
-            class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+        <div class="hireMe__button">
+          <a href="mailto:sergiogpuente@gmail.com" class="no-underline border-round-lg">Contratame</a>
         </div>
       </div>
 
@@ -50,25 +51,26 @@
       <div class="left__content col-12 xl:col-6">
         <div class="message__bubble triangle mb-4 mb:mb-2">
           <div class="message__text p-2 sm:p-3 text-center">
-            <p>Hola,Yo soy</p>
+            <p>Hola! Yo soy</p>
           </div>
         </div>
-        <h1 class="text-3xl sm:text-5xl md:text-7xl">Sergio G. Puente</h1>
+        <h1 class="text-3xl sm:text-5xl md:text-7xl">Sergio García Puente</h1>
         <p class="text-gray-500">
-          Desarrollador web full stack con experiencia en la creación de
-          sitios web
+          Ingeniero en Informática especializado en QA Automation, testing de software
+          y ciberseguridad. Experiencia en automatización de pruebas con Selenium,
+          diseño de casos de prueba y gestión de incidencias en Jira bajo metodologías ágiles Scrum.
         </p>
         <div class="home__buttons flex align-items-center gap-2 mt-6">
-          <a href="./assets/CURRICULUM.pdf" aria-label="Descargar Curriculum"
+          <a href="./assets/CV-Sergio_García_Puente.pdf" aria-label="Descargar Curriculum"
             class="cursor-pointer border-round-lg no-underline" download>Descargar Curriculum</a>
-          <button aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
-            class="cursor-pointer border-round-lg">
+          <a href="#portfolio" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+            class="cursor-pointer border-round-lg no-underline">
             Ver Portafolio
-          </button>
+          </a>
         </div>
       </div>
       <div class="right__content col-9 sm:col-6 xl:col-5">
-        <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100" />
+        <img src="./assets/foto perfil.png" alt="Foto perfil" width="100" height="100" />
       </div>
     </section>
 
@@ -77,9 +79,10 @@
       <div class="aboutME__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
         <div class="aboutME__info col-12 md:col-6 md:pr-6 pt-0">
           <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
-          <p class="text-gray-500">Soy un desarrollador web full stack apasionado por crear soluciones
-            innovadoras y eficientes. Mi experiencia abarca desde el diseño de interfaces intuitivas
-            hasta el desarrollo backend robusto, siempre enfocado en la calidad del producto final.</p>
+          <p class="text-gray-500">Profesional de informática con conocimientos en desarrollo web,
+            programación y análisis de datos. Manejo de tecnologías como Python, JavaScript, React y Java,
+            junto con herramientas de análisis y modelamiento de procesos como Power BI, Excel y Bizagi.
+            Destacado por la capacidad de aprendizaje continuo y adaptación a entornos tecnológicos.</p>
           <div class="knowledge flex flex-column gap-3 mt-5">
             <p>HTML 90%</p>
             <div class="progress__bar progress__html">
@@ -100,72 +103,229 @@
           </div>
           <div class="hireMe__button pt-4">
             <a href="mailTo:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
-              class="cursor-pointer no-underline border-round-lg">Contratame</a>
+              class="cursor-pointer no-underline border-round-lg">Contáctame</a>
           </div>
         </div>
         <div class="image col p-0 mt-6 md:mt-0">
-          <img src="./assets/freelancer.jpg" alt="Foto relacionado acerca de mi" width="100" height="100" />
+          <img src="./assets/Freelancer1.jpg" alt="Foto relacionado acerca de mi" width="100" height="100" />
         </div>
       </div>
     </section>
 
+
+
+    <!--FREE LANCER SECTION-->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+      <p class="text-sm">Tienes un proyecto en mente?</p>
+      <h1 class="text-center">Hablemos de tu idea</h1>
+      <div class="hireMe__button pt-4">
+        <a href="mailto:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
+          class="cursor-pointer no-underline border-round-lg">Escribeme</a>
+      </div>
+    </section>
+    <!--SERVICES-->
+    <div class="container">
+      <section id="services" class="services min-h-full w-full pb-7">
+        <div class="services__title flex flex-column gap-3 text-center">
+          <h1 class="text-3xl md:text-5xl">Mis Servicios</h1>
+          <p class="text-gray-400">Servicios enfocados en calidad de software,
+            automatización de pruebas y análisis tecnológico.</p>
+        </div>
+
+        <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+          <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-vial"></i>
+            </div>
+            <div class="service__name">
+              <p>QA Automation</p>
+            </div>
+          </div>
+
+          <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-bug"></i>
+            </div>
+            <div class="service__name">
+              <p>Testing Funcional</p>
+            </div>
+          </div>
+
+          <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="service__name">
+              <p>
+              <p>Bases de Datos SQL</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="service__name">
+              <p>Ciberseguridad</p>
+            </div>
+          </div>
+
+          <div class="card flex align-items-center col-12 sm:col md-col  lg:col-4 gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="service__name">
+              <p>Análisis de Datos</p>
+            </div>
+          </div>
+          <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+            <div class="service__logo flex align-items-center justify-content-center">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="service__name">
+              <p>Desarrollo Web</p>
+            </div>
+          </div>
+      </section>
+    </div>
+    <!--PORTAFOLIO-->
+
+    <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+      <div class="portfolio__title flex flex-column gap-3 text-center">
+        <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+        <p class="text-gray-400">Ofrezco una amplia gama de servicios para satisfacer tus necesidades digitales</p>
+      </div>
+      <div class="portfolio__gallery">
+        <div class="gallery__categories mb-5 mt-5 gap-5 text-center">
+          <ul class="flex list-none flex-wrap justify-content-center gap-5">
+            <li class="filter-item active" data-filter="all">Todos</li>
+            <li class="filter-item" data-filter="gym">Gimnasio</li>
+            <li class="filter-item" data-filter="tours__Web">Tours web</li>
+            <li class="filter-item" data-filter="world__Tours">Inmoviliaria web</li>
+            <li class="filter-item" data-filter="e__commerce">E-commerce</li>
+          </ul>
+        </div>
+        <div class="proyect__gallery flex justify-content-center align-items-center gap-3 flex-wrap">
+
+          <div class="project__card gym">
+            <img src="./assets/proyecto-4.jpeg" alt="Gimnasio">
+            <div class="overlay">
+              <h2>Gimnasio</h2>
+              <p>Análisis de calidad y automatización para plataformas fitness.</p>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </div>
+          </div>
+
+          <div class="project__card tours__Web">
+            <img src="./assets/proyecto-1.png" alt="Tours Web">
+            <div class="overlay">
+              <h2>Tours Web</h2>
+              <p>Plataforma de turismo con enfoque en experiencia de usuario y reservas rápidas.</p>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </div>
+          </div>
+
+          <div class="project__card world__Tours">
+            <img src="./assets/proyecto-5.jpg" alt="Inmobiliaria">
+            <div class="overlay">
+              <h2>Inmobiliaria</h2>
+              <p>Gestión de catálogos inmobiliarios con filtros avanzados y diseño responsivo.</p>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </div>
+          </div>
+
+          <div class="project__card e__commerce">
+            <img src="./assets/proyecto-2.png" alt="E-commerce">
+            <div class="overlay">
+              <h2>E-commerce</h2>
+              <p>Tienda online optimizada para ventas con integración de pagos segura.</p>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--FOOTER-->
+  <footer id="contact" class="footer__section pt-8 pb-8">
+    <div class="container">
+      <div class="grid grid-nogutter justify-content-between row-gap-6">
+
+        <div class="col-12 md:col-4 footer__col">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <p class="footer__brand">Auténtico e Innovador</p>
+          <p class="footer__desc">Desarrollo soluciones con enfoque en usabilidad, calidad y rendimiento técnico.</p>
+          <div class="social__mediaIcons mt-4 flex gap-3">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-12 sm:col-6 md:col-4 footer__col">
+          <h3 class="footer__title">Contacto</h3>
+          <div class="contact__info flex flex-column gap-3">
+            <div class="contact__item flex align-items-center gap-3">
+              <i class="fa-solid fa-phone color-orange"></i>
+              <p>+569 82778830</p>
+            </div>
+            <div class="contact__item flex align-items-center gap-3">
+              <i class="fa-solid fa-envelope color-orange"></i>
+              <p>sergiogpuente88@gmail.com</p>
+            </div>
+            <a href="mailto:sergiogpuente88@gmail.com" class="footer__btn mt-2">
+              <i class="fa-solid fa-paper-plane mr-2"></i> Escríbeme
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 sm:col-6 md:col-3 footer__col">
+          <h3 class="footer__title">Mis Servicios</h3>
+          <ul class="services__list list-none p-0 m-0">
+            <li>QA Automation</li>
+            <li>Testing Funcional</li>
+            <li>Bases de Datos SQL</li>
+            <li>Ciberseguridad</li>
+            <li>Análisis de Datos</li>
+            <li>Desarrollo Web</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom mt-8 pt-4 text-center border-top-1 border-gray-800">
+        <p class="text-gray-600 text-xs">© 2026 Sergio García Puente. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
   </div>
 
-  <!--FREE LANCER SECTION-->
-  <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
-    <p class="text-sm">Tienes un proyecto en mente?</p>
-    <h1 class="text-center">Hablemos de tu idea</h1>
-    <div class="hireMe__button pt-4">
-      <a href="mailto:sergiogpuente@gmail.com" aria-label="Enviar mensaje al correo electronico"
-        class="cursor-pointer no-underline border-round-lg">Escribeme</a>
-    </div>
-  </section>
-  <!--SERVICES-->
-  <div class="container"></div>
-  <section id="services" class="services min-h-full w-full pb-7">
-    <div class="services__title flex flex-column gap-3 text-center">
-      <h1 class="text-3xl md:text-5xl">Mis Servicios</h1>
-      <p class="text-gray-400">Ofrezco una amplia gama de servicios para satisfacer tus necesidades digitales</p>
-    </div>
-    <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-      <div class="card flex align-items-center col-12 sm:col-6 lg:col-4">
-        <div class="service__logo flex align-items-center justify-content-center">
-          <i class="fa-brands fab fa-html5"></i>
-        </div>
-        <div class="service__name">
-          <p>HTML</p>
-        </div>
-      </div>
-      <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-        <div class="service__logo flex align-items-center justify-content-center">
-          <i class="fa-brands fa-css"></i>
-        </div>
-        <div class="service__name">
-          <p>CSS</p>
-        </div>
-    </div>
-      <div class="card flex align-items-center col-12 sm:col lg:col gap-3 p-2">
-        <div class="service__logo flex align-items-center justify-content-center">
-          <i class="fa-brands fa-js"></i>
-        </div>
-        <div class="service__name">
-          <p>JavaScript</p>
-        </div>
-      </div>
-      <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-        <div class="service__logo flex align-items-center justify-content-center">
-          <i class="fa-brands fa-react"></i>
-        </div>
-        <div class="service__name">
-          <p>React Js</p>
-        </div>
-      </div>
-  </section>
-  <!--PORTAFOLIO-->
-  <section id="portafolio"></section>
-  <!--FOOTER-->
-  <footer id="contact"></footer>
 </body>
-<script></script>
+<script>
+  const filterContainer = document.querySelector('.gallery__categories');
+  const galleryItems = document.querySelectorAll('.project__card');
+
+  filterContainer.addEventListener("click", (e) => {
+    if (e.target.classList.contains("filter-item")) {
+      filterContainer.querySelector(".active").classList.remove("active");
+      e.target.classList.add("active");
+      const filterValue = e.target.getAttribute("data-filter");
+      galleryItems.forEach((item) => {
+        if (filterValue === "all" || item.classList.contains(filterValue)) {
+          item.classList.remove("hide");
+          item.classList.add("show");
+        } else {
+          item.classList.remove("show");
+          item.classList.add("hide");
+        }
+      });
+    }
+  });
+</script>
 
 </html>
