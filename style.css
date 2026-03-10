@@ -14,7 +14,7 @@ html {
 :root {
     --bg-color: #000;
     --font-color: #fff;
-    --secondary-bg-color: #ff4900;
+    --secondary-bg-color: #ff5a1f;
     --font: "Poppins", sans-serif;
 }
 
@@ -122,22 +122,6 @@ body::-webkit-scrollbar-thumb:hover {
     text-shadow: 2px 0 var(--secondary-bg-color), -2px 0 #00fffb;
     transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header__info {
     display: flex;
@@ -470,7 +454,7 @@ body {
     /* Pone el texto delante de la capa oscura */
 }
 
-/* Estilos de texto (opcionales para que se vea como en la foto) */
+/* Estilos de texto  */
 .freelancer h1 {
     font-size: 2.8rem;
     margin: 1rem 0;
@@ -482,32 +466,6 @@ body {
     color: #ccc;
     font-weight: 300;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------- SERVICES -------- */
 .card {
